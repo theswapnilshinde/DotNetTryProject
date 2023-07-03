@@ -18,13 +18,13 @@ namespace UserService
     public class Startup: FunctionsStartup
     {
 
-        public override void ConfigureAppConfiguration(IFunctionsConfigurationBuilder builder)
+     /*   public override void ConfigureAppConfiguration(IFunctionsConfigurationBuilder builder)
         {
             builder.ConfigurationBuilder
                 .SetBasePath(Environment.CurrentDirectory)
                 .AddJsonFile("local.settings.json", optional: true, reloadOnChange: true)
                 .AddEnvironmentVariables();
-        }
+        }  */
         public override void Configure(IFunctionsHostBuilder builder)
         {
             builder.Services.AddScoped<IPeople, PeopleService>();
