@@ -2,10 +2,12 @@
     "version": "2.0",
     "logging": {
         "applicationInsights": {
-            "samplingSettings": {
-                "isEnabled": true,
-                "excludedTypes": "Request"
-            }
+          "samplingSettings": {
+            "isEnabled": true,
+            "excludedTypes": "Request",
+            "key1": "59ae81bd6d043e9d2a69da98f9f6d70e257a9a2d"
+
+          }
         }
     }
 }
